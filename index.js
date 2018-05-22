@@ -204,6 +204,8 @@ module.exports = {
       2,
       {
         max: 1,
+        maxEOF: 1,
+        maxBOF: 1
       },
     ],
     'no-prototype-builtins'      : 2,
