@@ -36,9 +36,6 @@ module.exports = {
     'array-bracket-spacing': [
       2,
       'always',
-      {
-        objectsInArrays: false,
-      },
     ],
     'arrow-body-style': [
       2,
@@ -58,7 +55,7 @@ module.exports = {
     'block-scoped-var': 2,
     'brace-style'     : [
       2,
-      '1tbs',
+      'stroustrup',
       {
         allowSingleLine: true,
       },
@@ -85,7 +82,11 @@ module.exports = {
       'last',
     ],
     'consistent-return': 2,
-    'dot-location'     : [
+    curly              : [
+      2,
+      'all',
+    ],
+    'dot-location': [
       2,
       'property',
     ],
@@ -190,7 +191,7 @@ module.exports = {
         ignoreJSX: 'all',
       },
     ],
-    'no-invalid-this': 2,
+    'no-invalid-this': 0,
     'no-multi-spaces': [
       2,
       {
@@ -203,9 +204,9 @@ module.exports = {
     'no-multiple-empty-lines': [
       2,
       {
-        max: 1,
+        max   : 1,
+        maxBOF: 1,
         maxEOF: 1,
-        maxBOF: 1
       },
     ],
     'no-prototype-builtins'      : 2,
@@ -228,9 +229,6 @@ module.exports = {
     'object-curly-spacing'         : [
       2,
       'always',
-      {
-        arraysInObjects: false,
-      },
     ],
     'object-shorthand': [
       2,
@@ -422,6 +420,10 @@ module.exports = {
         asyncArrow: 'always',
         named     : 'never',
       },
+    ],
+    'space-in-parens': [
+      2,
+      'never',
     ],
     strict: [
       2,
